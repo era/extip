@@ -1,0 +1,7 @@
+<div class="jumbotron">
+  <h2>Did I help you? :)</h2>
+  <p class="lead">So why not pay me a coffee?<br /> Just put your credit card information and the quantity in USD that you want to donate.<br /> It doesn't record your data, it sends to paypal for processing.</p>
+</div>
+
+  <%= render "form.html", conn: @conn %>
+</div>

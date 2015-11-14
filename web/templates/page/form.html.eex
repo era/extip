@@ -1,0 +1,25 @@
+<div class="row marketing">
+  <form action="<%= page_path(@conn, :create) %>" method="post">
+  <input type="hidden" name="_csrf_token" value="<%= get_csrf_token %>">
+    <div class="col-lg-6">
+      <h4>Personal Data/Donation</h4>
+      <input type="number" name="pay[value]" value="" placeholder="Value in USD" />
+      <input type="email" name="pay[email]" placeholder="Your e-mail" />
+      <br /><br />
+      <input type="text" name="pay[name]" placeholder="Name (as shown in the card)" style="width:100%" />
+    </div>
+
+    <div class="col-lg-6">
+      <h4>Credit Card</h4>
+      <input type="number" name="pay[number]" placeholder="Credit Card number" />
+      <input type="number" name="pay[cvv]" placeholder="Security Code" />
+      <br /><br />
+      <input type="text" name="pay[expires]" placeholder="Expires Date" />
+      <input type="text" name="pay[type]" placeholder="Visa or Master Card?" />
+    </div>
+    <div class="col-lg-4" >
+      <br />
+      <input type="submit" value="Donate!" />
+    </div>
+  </form>
+</div>
